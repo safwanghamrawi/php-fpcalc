@@ -35,7 +35,7 @@ class FpcalcProcess
      */
     public function generateFingerprint(array $files): string
     {
-        $this->process->setCommandLine($this->generateCommandLine($files));
+        $this->process = new Process($this->generateCommandLine($files));
         try {
 
             $this->process->mustRun();
