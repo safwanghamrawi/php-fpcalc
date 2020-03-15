@@ -12,6 +12,6 @@ class FpcalcFactory
      */
     public function create(): FpcalcProcess
     {
-        return new FpcalcProcess(new Process(''));
+        return new FpcalcProcess(new Process([]));
     }
 }
